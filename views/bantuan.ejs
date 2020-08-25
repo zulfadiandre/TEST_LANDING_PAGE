@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--start-->
+    <meta name="author" content="Assist.id" />
+    <meta name="google-site-verification" content="xaSOGYCxjaipS36lfuwWGfrYHzGC9D7SKHFztiC7HK0" />
+    <meta name="keyword" content="assist.id, software, klinik rumah sakit, puskesmas, manajemen klinik">
+    <meta name="description" content="Assist.id, solusi manajemen klinik, apotek, rumah sakit dengan teknologi sistem informasi, aplikasi klinik yang mengelola rekam medis, odontogram, antrian, konsultasi online, stok obat, laporan, kasir didukung BPJS P-Care...">
+    <meta property="og:site_name" content="Assist.id" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Assist.id - Software Aplikasi Klinik Umum, Gigi, Kecantikan, BPJS Terlengkap" />
+    <meta property="og:url" content="https://www.assist.id" />
+    <meta property="og:description" content="Assist.id, solusi manajemen klinik, apotek, rumah sakit dengan teknologi sistem informasi, aplikasi klinik yang mengelola rekam medis, odontogram, antrian, konsultasi online, stok obat, laporan, kasir didukung BPJS P-Care..." />
+    <!--end-->
+
+    <title>Assist.id - Software Aplikasi Klinik Pratama BPJS, Kecantikan, Hemodialisis dan Rumah Sakit</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/apple-icon.png">
+
+    <!-- Plugin CSS -->
+    <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/plugin/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="static/plugin/et-line/style.css" rel="stylesheet">
+    <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+    <!-- End -->
+
+    <!-- Theme css -->
+    <link href="static/css/stylev3.css" rel="stylesheet">
+    <link href="static/css/color/defaultv3.css" rel="stylesheet" id="color_theme">
+    <!-- End -->
+    <%- include('scripts'); %>
+
+    <script>
+        function dashboard(){
+            var dashboard = document.getElementById("dashboard");
+            var rawatjalan = document.getElementById("rawatjalan");
+            var registrasi = document.getElementById("registrasi");
+            var emr = document.getElementById("EMR")
+            var apotek = document.getElementById("apotek");
+            if (dashboard.style.display === "none"){
+                dashboard.style.display = "block";
+                rawatjalan.style.display = "none";
+                registrasi.style.display = "none";
+                emr.style.display = "none";
+                apotek.style.display = "none";
+            } else {
+                rawatjalan.style.display = "none";
+                registrasi.style.display = "none";
+                emr.style.display = "none";
+                apotek.style.display = "none";
+            }
+        }
+
+        function rawatjalan(){
+            var rawatjalan = document.getElementById("rawatjalan");
+            var dashboard = document.getElementById("dashboard");
+            var registrasi = document.getElementById("registrasi");
+            var emr = document.getElementById("EMR");
+            var apotek = document.getElementById("apotek");
+            if (rawatjalan.style.display === "none"){
+                rawatjalan.style.display = "block";
+                dashboard.style.display = "none";
+                registrasi.style.display = "none";
+                emr.style.display = "none";
+                apotek.style.display = "none";
+            } else {
+                dashboard.style.display = "none";
+                registrasi.style.display = "none";
+                emr.style.display = "none";
+                apotek.style.display = "none";
+            }
+        }
+
+        function registrasi(){
+            var registrasi = document.getElementById("registrasi");
+            var rawatjalan = document.getElementById("rawatjalan");
+            var dashboard = document.getElementById("dashboard");
+            var emr = document.getElementById("EMR");
+            var apotek = document.getElementById("apotek");
+            if (registrasi.style.display === "none"){
+                registrasi.style.display = "block";
+                dashboard.style.display = "none";
+                rawatjalan.style.display = "none";
+                emr.style.display = "none";
+                apotek.style.display = "none";
+            } else {
+                dashboard.style.display = "none";
+                rawatjalan.style.display = "none";
+                emr.style.display = "none";
+                apotek.style.display = "none";
+            }
+        }
+
+        function EMR(){
+            var emr = document.getElementById("EMR");
+            var registrasi = document.getElementById("registrasi");
+            var rawatjalan = document.getElementById("rawatjalan");
+            var dashboard = document.getElementById("dashboard");
+            var apotek = document.getElementById("apotek");
+            if (emr.style.display === "none"){
+                emr.style.display = "block";
+                dashboard.style.display = "none";
+                rawatjalan.style.display = "none";
+                registrasi.style.display = "none";
+                apotek.style.display = "none";
+            } else{
+                dashboard.style.display = "none";
+                rawatjalan.style.display = "none";
+                registrasi.style.display = "none";
+                apotek.style.display = "none"; 
+            }
+        }
+        function apotek(){
+            var apotek = document.getElementById("apotek");
+            var registrasi = document.getElementById("registrasi");
+            var rawatjalan = document.getElementById("rawatjalan");
+            var dashboard = document.getElementById("dashboard");
+            var emr = document.getElementById("EMR");
+            if (apotek.style.display === "none"){
+                apotek.style.display = "block";
+                dashboard.style.display = "none";
+                rawatjalan.style.display = "none";
+                registrasi.style.display = "none";
+                emr.style.display = "none";
+            } else{
+                dashboard.style.display = "none";
+                rawatjalan.style.display = "none";
+                registrasi.style.display = "none";
+                emr.style.display = "none"; 
+            }
+        }
+    </script>
+
+</head>
+
+<!-- Body Start -->
+<body data-spy="scroll" data-target="#navbar" data-offset="98">
+
+<!-- Loading -->
+<div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+</div>
+<!-- / -->
+
+<!-- Header Biru -->
+<header>
+    <nav class="navbar header-biru header-nav-dark navbar-expand-lg">
+        <div class="container">
+        <a>Sistem Aplikasi Klinik Terbaik di Indonesia</a>
+        <a>Hubungi Kami 0813-1000-0949 | Senin - Jumat (08.30 - 17.30 WIB)</a>
+        </div>
+    </nav>
+</header>
+<!-- Header Biru End -->
+
+<!-- Header Putih -->
+<header>
+    <nav class="navbar header-nav header-nav-dark navbar-expand-lg">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="/">
+                <img src="" data-src="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/logo.png" title="" alt="logo assist.id software klinik terbaik indonesia" style="max-height: 50px;">
+            </a>
+            <!-- / -->
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarbantuan" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- / -->
+
+            <!-- Top Menu Mobile -->
+            <div class="collapse navbar-collapse justify-content-end font-alt" id="navbarbantuan">
+                <ul class="navbar-nav ml-auto" id="mobile">
+                    <form>
+                        <input type="search" placeholder="Cari modul bantuan">
+                    </form>
+                    <!-- Menu Dashboard -->
+                    <li style="padding-top: 10px;"><a class="nav-link" onclick="dashboard()" style="font-weight: bold;">Dashboard</a></li>
+                    <!-- Menu Rawat Jalan -->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link">Rawat Jalan</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu" style="background: #fff;">
+                            <li ><a onclick="rawatjalan()" style="border-bottom: 0px;">Overview Rawat Jalan</a></li>
+                            <li><a onclick="rawatjalan()" href="#pendaftaranrawatjalan" style="border-bottom: 0px;">Cara Pendaftaran Rawat Jalan</a></li>
+                            <li><a onclick="rawatjalan()" href="#reschedulerawatjalan" style="border-bottom: 0px;">Cara Reschedule Pendaftaran Pasien</a></li>
+                            <li><a onclick="rawatjalan()" href="#pasienbarurawatjalan" style="border-bottom: 0px;">Cara Melakukan Pendaftaran Pasien Baru</a></li>
+                            <li><a onclick="rawatjalan()" href="#kalenderrawatjalan" style="border-bottom: 0px;">Cara Melakukan Block Kalender</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Registrasi -->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link">Registrasi</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu" style="background: #fff;">
+                            <li><a onclick="registrasi()"style="border-bottom: 0px;">Overview Registrasi</a></li>
+                            <li><a onclick="registrasi()" href="#pendaftaranregistrasi" style="border-bottom: 0px;">Cara Pendaftaran Registrasi Pasien</a></li>
+                            <li><a onclick="registrasi()" href="#pendaftaranpasien" style="border-bottom: 0px;">Cara Melihat Pendaftaran Pasien</a></li>
+                            <li><a onclick="registrasi()" href="#printpendaftaran" style="border-bottom: 0px;">Cara Export dan Print Pendaftaran Pasien</a></li>
+                            <li><a onclick="registrasi()" href="#reschedulekunjungan" style="border-bottom: 0px;">Reschedule Kunjungan Pasien</a></li>
+                            <li><a onclick="registrasi()" href="#antrianotomatis" style="border-bottom: 0px;">Cara Melakukan Panggilan Otomatis Antrian Pasien</a></li>
+                            <li><a onclick="registrasi()" href="#antrianpasien" style="border-bottom: 0px;">Cara Menampilkan Antrian Pasien di Layar</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu EMR -->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link">EMR</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu" style="background: #fff;">
+                            <li><a href="#" style="border-bottom: 0px;">Overview EMR</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mengedit Data Diri Pasien</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mengedit EMR Pasien</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mencoret EMR Pasien</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Apotek-->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link">Apotek</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu" style="background: #fff;">
+                            <li><a href="#" style="border-bottom: 0px;">Cara melihat riwayat (history) kartu stok obat</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Menambahkan Data Obat</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mengedit dan Menghapus Data Obat</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Restock Obat</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mengedit Stok Obat dari Depot</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Warning Kadaluarsa Obat</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mengedit Stok Obat dari Kartu Stok</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mengedit Resep Dokter</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melakukan Mutasi Obat / Bahan Habis Pakai</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Print Label dan Resep Dokter</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara mengganti status antrian obat dan melakukan panggilan otomatis</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara mengedit data kadaluarsa dan no. batch</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Rekap Data Penggunaan Obat Harian atau Bulanan</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Menambah Depot Obat</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Kasir-->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link">Kasir</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu" style="background: #fff;">
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melakukan Pembayaran Pasien</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat dan Melakukan Pembayaran Hutang Piutang</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Profile -->
+                    <li><a class="nav-link" href="#" >Profile</a></li>
+                    <!-- Menu Office-->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link">Office</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu" style="background: #fff;">
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Pendapatan Hutang Piutang</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Rata-Rata Waktu</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan List Warning</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Prosedur Pasien</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Penjuialan Obat</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Kunjungan Pasien</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Transaksi pada Pasien maupun Distributor</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Penjualan Obat Langsung</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Pembelian Obat</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Aset Obat dan Bahan Habis Pakai</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Laporan Tutup Buku</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Kelola Akun Keuangan</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Membuat Transaksi Office</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Melihat Semua Data Pasien</a></li>
+                        </ul>
+                    </li>
+                     <!-- Menu Settings-->
+                     <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link">Settings</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu" style="background: #fff;">
+                            <li><a href="#" style="border-bottom: 0px;">Cara Menambah Akses Akun</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Menambahkan Akun Staff</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mengatur Supaya Harga Obat di Struk tidak satu-satu</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara mereset password</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">General Setting pada BPJS</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">General Setting pada Rawat Jalan</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">General Setting pada EMR</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">General Setting pada Apotek</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">General Setting pada Kasir</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">General Setting pada Laporan</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Mengaktifkan Fitur Tooltip</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Menambah dan Mengedit Data Tenaga Medis</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Menambah dan Mengedit Katalog Harga Prosedur</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Menambah dan Mengedit Katalog Medical Check Up</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Setting Komisi dari Prosedur</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Menambah dan Mengedit Kamar Rawat Inap</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Setting Printing Template</a></li>
+                            <li><a href="#" style="border-bottom: 0px;">Cara Membuat Surat Menyurat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- / -->
+            
+            <!-- Top Menu -->
+            <%- include('header-v3'); %>
+            <!-- / -->
+     </div><!-- Container -->
+  </nav> <!-- Navbar -->
+</header>
+<!-- Header Putih End -->
+
+<!-- Main -->
+<main>
+
+    <!--
+    =============================
+      Home Banner
+    =============================
+    -->
+
+    <section id="home" class="section-bantuan gray-bg sm-p-20px-b">
+        <div class="container">
+            <div class="row justify-content-center sm-p-15px-lr">
+                <div class="col-lg-3 col-md-3 gray-bg-g">
+                    <!--Sidebar-->
+                    <div class="wrapper p-40px-r sm-p-15-lr  sm-p-10px-tb" id="table">
+                    <div id="sidebar">
+                        <ul class="list-unstyled components">
+                            <!-- Menu Dashboard -->
+                            <li><a href="#dashboardSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Dashboard</a>
+                                <ul class="collapse list-unstyled" id="dashboardSubmenu">
+                            
+                                    <li><a onclick="dashboard()" href="#contentdaftarpasien" >Cara Pendaftaran Registrasi Pasien</a></li>
+                                    <li><a onclick="dashboard()" href="#contentEksport">Cara Eksport dan Print Pendaftaran Pasien</a></li>
+                        
+                                </ul>
+                            
+                            </li>
+                            <!-- Menu Rawat Jalan -->
+                            <li><a href="#rawatSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Rawat Jalan</a>
+                                <ul class="collapse list-unstyled" id="rawatSubmenu">
+                                    <li><a onclick="rawatjalan()" class="list-bantuan">Overview Rawat Jalan</a></li>
+                                    <li><a onclick="rawatjalan()" href="#pendaftaranrawatjalan" class="list-bantuan">Cara Pendaftaran Rawat Jalan</a></li>
+                                    <li><a onclick="rawatjalan()" href="#reschedulerawatjalan" class="list-bantuan">Cara Reschedule Pendaftaran Pasien</a></li>
+                                    <li><a onclick="rawatjalan()" href="#pasienbarurawatjalan" class="list-bantuan">Cara Melakukan Pendaftaran Pasien Baru</a></li>
+                                    <li><a onclick="rawatjalan()" href="#kalenderrawatjalan" class="list-bantuan">Cara Melakukan Block Kalender</a></li>
+                                </ul>
+                            </li>
+                            <!-- Menu Registrasi -->
+                            <li><a href="#registrasiSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Registrasi</a>
+                                <ul class="collapse list-unstyled" id="registrasiSubmenu">
+                                    <li><a onclick="registrasi()" class="list-bantuan">Overview Registrasi</a></li>
+                                    <li><a onclick="registrasi()" href="#pendaftaranregistrasi" class="list-bantuan">Cara Pendaftaran Registrasi Pasien</a></li>
+                                    <li><a onclick="registrasi()" href="#pendaftaranpasien" class="list-bantuan">Cara Melihat Pendaftaran Pasien</a></li>
+                                    <li><a onclick="registrasi()" href="#printpendaftaran" class="list-bantuan">Cara Export dan Print Pendaftaran Pasien</a></li>
+                                    <li><a onclick="registrasi()" href="#reschedulekunjungan" class="list-bantuan">Reschedule Kunjungan Pasien</a></li>
+                                    <li><a onclick="registrasi()" href="#antrianotomatis" class="list-bantuan">Cara Melakukan Panggilan Otomatis Antrian Pasien</a></li>
+                                    <li><a onclick="registrasi()" href="#antrianpasien" class="list-bantuan">Cara Menampilkan Antrian Pasien di Layar</a></li>
+                                </ul>
+                            </li>
+                            <!-- Menu EMR -->
+                            <li><a href="#emrSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">EMR</a>
+                                <ul class="collapse list-unstyled" id="emrSubmenu">
+                                    <li><a onclick="EMR()" href="#" class="list-bantuan">Overview EMR</a></li>
+                                    <li><a onclick="EMR()" href="#editdatapasien" class="list-bantuan">Cara Mengedit Data Diri Pasien</a></li>
+                                    <li><a onclick="EMR()" href="#editemrpasien" class="list-bantuan">Cara Mengedit EMR Pasien</a></li>
+                                    <li><a onclick="EMR()" href="#coretemrpasien" class="list-bantuan">Cara Mencoret EMR Pasien</a></li>
+                                    <li><a onclick="EMR()" href="#printemrpasien" class="list-bantuan">Cara Print EMR Pasien</a></li>
+                                    <li><a onclick="EMR()" href="#hideandshowemr" class="list-bantuan">Cara Menampilkan dan Menyembunyikan EMR Pasien</a></li>
+                                </ul>
+                            </li>
+                            <!-- Menu Apotek -->
+                            <li><a href="#apotekSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Apotek</a>
+                                <ul class="collapse list-unstyled" id="apotekSubmenu">
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Overview Apotek</a></li>
+                                    <li><a onclick="apotek()" href="#riwayatkartustok" class="list-bantuan">Cara melihat riwayat (history) kartu stok obat</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Menambahkan Data Obat</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Mengedit dan Menghapus Data Obat</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Restock Obat</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Mengedit Stok Obat dari Depot</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Melihat Warning Kadaluarsa Obat</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Mengedit Stok Obat dari Kartu Stok</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Mengedit Resep Dokter</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Melakukan Mutasi Obat / Bahan Habis Pakai</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Print Label dan Resep Dokter</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara mengganti status antrian obat dan melakukan panggilan otomatis</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara mengedit data kadaluarsa dan no. batch</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Rekap Data Penggunaan Obat Harian atau Bulanan</a></li>
+                                    <li><a onclick="apotek()" href="#" class="list-bantuan">Cara Menambah Depot Obat</a></li>
+                                </ul>
+                            </li>
+                            <!-- Menu Kasir -->
+                            <li><a href="#kasirSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Kasir</a>
+                                <ul class="collapse list-unstyled" id="kasirSubmenu">
+                                    <li><a href="#" class="list-bantuan">Cara Melakukan Pembayaran Pasien</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat dan Melakukan Pembayaran Hutang Piutang</a></li>
+                                </ul>
+                            </li>
+                            <!-- Menu Profile -->
+                            <li><a href="#" class="list-bantuan">Profile</a></li>
+                            <!-- Menu Office -->
+                            <li><a href="#officeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Office</a>
+                                <ul class="collapse list-unstyled" id="officeSubmenu">
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Pendapatan Hutang Piutang</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Rata-Rata Waktu</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan List Warning</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Prosedur Pasien</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Penjuialan Obat</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Kunjungan Pasien</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Transaksi pada Pasien maupun Distributor</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Penjualan Obat Langsung</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Pembelian Obat</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Aset Obat dan Bahan Habis Pakai</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Laporan Tutup Buku</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Kelola Akun Keuangan</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Membuat Transaksi Office</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Melihat Semua Data Pasien</a></li>
+                                </ul>
+                            </li>
+                            <!-- Menu Settings -->
+                            <li><a href="#settingsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Settings</a>
+                                <ul class="collapse list-unstyled" id="settingsSubmenu">
+                                    <li><a href="#" class="list-bantuan">Cara Menambah Akses Akun</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Menambahkan Akun Staff</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Mengatur Supaya Harga Obat di Struk tidak satu-satu</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara mereset password</a></li>
+                                    <li><a href="#" class="list-bantuan">General Setting pada BPJS</a></li>
+                                    <li><a href="#" class="list-bantuan">General Setting pada Rawat Jalan</a></li>
+                                    <li><a href="#" class="list-bantuan">General Setting pada EMR</a></li>
+                                    <li><a href="#" class="list-bantuan">General Setting pada Apotek</a></li>
+                                    <li><a href="#" class="list-bantuan">General Setting pada Kasir</a></li>
+                                    <li><a href="#" class="list-bantuan">General Setting pada Laporan</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Mengaktifkan Fitur Tooltip</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Menambah dan Mengedit Data Tenaga Medis</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Menambah dan Mengedit Katalog Harga Prosedur</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Menambah dan Mengedit Katalog Medical Check Up</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Setting Komisi dari Prosedur</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Menambah dan Mengedit Kamar Rawat Inap</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Setting Printing Template</a></li>
+                                    <li><a href="#" class="list-bantuan">Cara Membuat Surat Menyurat</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- / -->
+                </div>
+                  
+                <div class="col-lg-8 col-md-8 p-20px-b gray-bg-g">  
+                    <div class="section-title-b p-20px-t sm-p-0px-t sm-p-0px-lr" id="dashboards">
+                        <form id="table">
+                            <input type="search" placeholder="Cari modul bantuan">
+                        </form>
+
+                        <!--Dashboard-->
+                        <div id="dashboard">
+                            <div class="section-title-b">
+                                <h3 class="dark-color font-alt bldd p-20px-t">Dashboard</h3>
+                                <p>Pelajari lebih lanjut mengenai modul Dashboard yang tersedia dalam sistem Assist.id.</p>
+                            </div>
+                            <hr>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="caradaftarpasien">
+                                <div id="contentdaftarpasien">
+                                    <h5 class="dark-color1 font-alt bldd">Cara Pendaftaran Registrasi Pasien</h5>
+                                </div>
+                                <p>
+                                    <div class="post-content">
+                                        <p>Halo Rekan <a href="https://assist.id">Assist.id</a>! Untuk dapat melayani pasien yang belum terdaftar di Klinik saat pembelian Obat Langsung di Apotek, sekarang dengan adanya Update Sistem Klinik Assist.id versi 3.5.5, Anda dapat melakukan pendaftaran Pasien Baru di Kasir loh.</p>
+                                        <p>Fitur ini sangat memudahkan pelayanan di Klinik, apalagi saat terjadi pembayaran pada pasien yang belum terdaftar sebelumnya misalnya saat ada pembelian obat langsung di Apotek. Dengan begitu riwayat pembelian obat dapat tercatat karena pasien telah didaftarkan di Klinik Anda.</p>
+                                        <p>Untuk mendaftarkan Pasien Baru di Modul Kasir, mari ikuti langkah-langkah berikut ini:</p>
+                                        <p>1. Klik <strong>Modul Kasir</strong>, lalu Klik <strong>+Tambah Pembayaran</strong></p>
+                                        <figure class="kg-card kg-image-card">
+                                            <img src="https://blog.assist.id/content/images/2020/08/sistem-klinik-assist-id-pendaftaran-pasien-di-kasir1.gif" class="kg-image">
+                                        </figure
+                                        ><p>2. Masukan <strong>Nama Pasien</strong> pada kolom Cari Pasien, lalu Klik <strong>New</strong></p>
+                                        <figure class="kg-card kg-image-card">
+                                            <img src="https://blog.assist.id/content/images/2020/08/sistem-klinik-assist-id-pendaftaran-pasien-di-kasir2.gif" class="kg-image">
+                                        </figure>
+                                        <p>3. Isi Form Pasien Baru dengan ketentuan kolom yang bertanda <strong>(*) Bintang</strong> wajib diisi</p>
+                                        <p></p>
+                                        <h3 id="informasi-dasar">Informasi Dasar</h3>
+                                        <figure class="kg-card kg-image-card">
+                                            <img src="https://blog.assist.id/content/images/2020/08/sistem-klinik-assist-id-pendaftaran-pasien-baru1.png" class="kg-image">
+                                        </figure>
+                                        <ul>
+                                            <li>Foto Pasien</li>
+                                            <li>*Nama Lengkap</li>
+                                            <li>Nomor Medical Record <strong>(*Terisi secara otomatis oleh Sistem)</strong></li>
+                                            <li>*Kota Tempat Lahir</li>
+                                            <li>*Tanggal Lahir</li>
+                                            <li>Nomor KTP</li>
+                                            <li>*Jenis Kelamin</li>
+                                            <li>*Agama</li>
+                                            <li>*Status</li>
+                                            <li>*Golongan Darah</li>
+                                            <li>*Pendidikan Terakhir</li>
+                                            <li>*Pekerjaan</li>
+                                            <li>Nomor Hp : Ini dapat berfungsi juga untuk Klinik agar bisa mengirimkan pesan seputar informasi di Klinik</li>
+                                            <li>Email : Ini dapat berfungsi juga untuk Klinik dapat mengirimkan undangan Menggunakan Aplikasi Medicaboo, Aplikasi yang bisa digunakan pasien untuk melakukan Booking secara online</li>
+                                        </ul>
+                                        <h3 id="metode-pembayaran">Metode Pembayaran</h3>
+                                        <figure class="kg-card kg-image-card">
+                                            <img src="https://blog.assist.id/content/images/2020/08/sistem-klinik-assist-id-pendaftaran-pasien-baru2.png" class="kg-image">
+                                        </figure>
+                                        <p>Tersedia beberapa pilihan metode pembayaran untuk memudahkan proses pembayaran di Kasir seperti: </p>
+                                        <ul>
+                                            <li>Cash</li>
+                                            <li>Asuransi : Apabila memilih ini, Anda juga harus memasukan Data Nama Asuransi dan Nomor Asuransi</li>
+                                            <li>BPJS Kesehatan : Apabila memilih ini, Anda juga harus memasukan Nomor BPJS</li>
+                                            <li>Perusahaan : Apabila memilih ini, Anda juga harus memasukan Data Nama Perusahaan dan Nomor</li>
+                                            <li>Lainnya : Apabila memilih ini, nanti harus memilih salah satu metode pembayaran uang dilakukan saat melakukan pembayaran</li>
+                                        </ul>
+                                        <h3 id="tempat-tinggal">Tempat Tinggal</h3>
+                                        <figure class="kg-card kg-image-card">
+                                            <img src="https://blog.assist.id/content/images/2020/08/sistem-klinik-assist-id-pendaftaran-pasien-baru3.png" class="kg-image">
+                                        </figure>
+                                        <ul><li>Alamat Rumah</li><li>Provinsi</li><li>Kota/Kabupaten</li><li>Kecamatan</li><li>Kode Pos</li>
+                                        </ul>
+                                        <h3 id="anggota-keluarga-penanggung-jawab">Anggota Keluarga/Penanggung Jawab</h3>
+                                        <figure class="kg-card kg-image-card">
+                                            <img src="https://blog.assist.id/content/images/2020/08/sistem-klinik-assist-id-pendaftaran-pasien-baru4.png" class="kg-image">
+                                        </figure>
+                                        <ul><li>*Nama Lengkap</li><li>*Hubungan Dengan Pasien</li><li>*Jenis Kelamin</li><li>*Golongan Darah</li><li>*Pekerjaan</li><li>Nomor Hp</li><li>Email</li><li>Alamat</li>
+                                        </ul>
+                                        <p>4. Setelah informasi Pasien Baru sudah diisi, Klik <strong>Simpan</strong></p>
+                                        <p>Setelah Data Pasien Baru telah berhasil dibuat, maka selanjutnya Anda bisa melanjutkan proses pembayaran Pasien di Kasir.</p>
+                                        <p>Sekian cara mendaftarkan Pasien Baru di Modul Kasri dengan mudah dan cepat dalam Sistem Klinik Assist.id. Semoga bisa diimlementasikan di Klinik Anda dengan baik.</p>
+                                        <p>Jika Anda memiliki pertanyaan mengenai produk atau cara penggunaannya silahkan hubungi kami melalui live chat di dalam sistem di sebelah kanan bawah. Selamat Mencoba! (▔▽▔)/</p>
+                                        <figure class="kg-card kg-image-card">
+                                            <img src="https://blog.assist.id/content/images/2020/03/layanan-llive-chat-sistem-klinik-terbaik-assist-id-1.gif" class="kg-image">
+                                            <figcaption>Live Chat sistem klinik Assist.id</figcaption></figure>
+                                    </div>
+                                </p>
+
+                            </div>
+                            <hr>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="eksportdanprint">
+                                <div id="contentEksport">
+                                    <h5 class="dark-color1 font-alt bldd">Cara Eksport dan Print Pendaftaran Pasien</h5>
+                                </div>
+                                <p>
+                                    <section class="post-full-content">
+                                        <div class="post-content">
+                                            <p>Pada sistem Assist.id, data pendaftaran pasien bisa diinput, export dan print sekaligus. Berikut adalah langkahnya :</p>
+                                            <p>1.Klik ke Modul <strong>Registration</strong>.</p>
+                                            <p>2.Pada Menu Registration Anda bisa melakukan <strong>Pendaftaran Baru</strong> pasien pada :</p>
+                                            <ul>
+                                                <li>- Rawat Jalan Poli, </li>
+                                                <li>- Rawat Jalan Lab, </li>
+                                                <li>- Gawat Darurat, </li>
+                                                <li>- Rawat Inap, </li>
+                                                <li>- Kunjungan Sehat, </li>
+                                                <li>- Promotif Preventif dan Kegiatan Kelompok. </li>
+                                            </ul>
+                                            <p>Pada Menu ini tersedia juga tabel data pendaftaran pasien, lengkap dengan <strong>tujuan pendaftaran</strong>, <strong>jadwal </strong>dan <strong>status </strong>pasien. &nbsp;Jadi Anda akan lebih mudah mengelola pendaftaran pasien, konfirmasi pendaftaran, ubah status pasien, pemanggilan otomatis, serta menampilkan antrian pasien.</p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/07/Modul-registrasi-untuk-import-eksport-pendaftaran-pasien-pada-sistem-informasi-klinik-terbaik-Assist-id-software-aplikasi.png" class="kg-image">
+                                            </figure>
+                                            <p>3.Untuk eksport data pasien yang telah didaftarkan, klik tombol <strong>"EXPORT"</strong></p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/07/tombol-export-untuk-eksport-data-pendaftaran-pasien-pada-sistem-informasi-klinik-terbaik-Assist-id-software-aplikasi.png" class="kg-image">
+                                            </figure>
+                                            <p>Maka semua data riwayat pendaftaran akan didownload dalam bentuk file Excel dengan format ekstensi .xlsx</p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/07/format-file-rawat-jalan-dalam-bentuk-excel-yang-telah-dieksport-pada-sistem-informasi-klinik-terbaik-Assist-id-software-aplikasi.png" class="kg-image">
+                                            </figure>
+                                            <p>Maka data yang telah di-eksport tadi telah berhasil di download dalam bentuk file excel.</p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/07/data-yang-telah-dieksport-dalam-bentuk-excel-pada-sistem-informasi-klinik-terbaik-Assist-id-software-aplikasi.png" class="kg-image">
+                                            </figure>
+                                            <p>4.Untuk print data, dapat dilakukan secara langsung pada laman aplikasi Assist.id dengan mengikuti langkah berikut :</p>
+                                            <p>Jika ingin print poli yang dibutuhkan, klik tanda panah untuk memunculkan semua poli.</p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/07/Klik-poli-untuk-memunculkan-semua-poli-pada-sistem-informasi-klinik-terbaik-Assist-id-software-aplikasi.png" class="kg-image">
+                                            </figure>
+                                            <p>Kemudian Klik Icon "<strong>Printer</strong>"</p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/07/klik-tombol-print-pada-sistem-informasi-klinik-terbaik-Assist-id-software-aplikasi.png" class="kg-image">
+                                            </figure>
+                                            <p>Dokumen akan menunjukkan data pasien beserta gambaran format print sesuai dengan poli yang dipilih tadi.</p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/07/tampilkan-print-list-pendaftaran-pada-sistem-informasi-klinik-terbaik-Assist-id-software-aplikasi.png" class="kg-image">
+                                            </figure>
+                                            <ul>
+                                                <li>( [ ] ) &nbsp;Tanda fit yang paling atas fungsinya adalah menyesuaikan halaman &nbsp;yang ingin di print.</li>
+                                                <li>( + ) &nbsp; Tanda plus fungsinya untuk memperbesar halaman</li>
+                                                <li>( -- ) &nbsp;Tanda Minus fungsinya untuk memperkecil halaman</li>
+                                            </ul>
+                                            <p>Lalu selanjutnya Anda bisa setting halaman, ukuran kertas, dan lainnya. Setelah itu klik tombol "<strong>Print</strong>"</p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/07/klik-tombol-print-jika-format-print-sudah-sesuai-pada-sistem-informasi-klinik-terbaik-Assist-id-software-aplikasi.png" class="kg-image">
+                                            </figure>
+                                            <p>Selamat, Anda telah berhasil melakukan Eksport dan Print Pendaftaran Pasien╰(///´꒳`///)╯</p>
+                                            <p>Jika Anda memiliki pertanyaan mengenai produk atau cara penggunaannya silahkan hubungi kami melalui live chat di dalam sistem di sebelah kanan bawah. Selamat Mencoba!</p>
+                                            <figure class="kg-card kg-image-card">
+                                                <img src="https://blog.assist.id/content/images/2020/03/layanan-llive-chat-sistem-klinik-terbaik-assist-id-1.gif" class="kg-image">
+                                                <figcaption>Live Chat sistem klinik Assist.id</figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+                               
+                                </p>
+                            </div>
+                        </div>
+                        <!-- / -->
+                        
+                        <!--Rawat Jalan-->
+                         <div id="rawatjalan" style="display: none;">
+                            <div class="section-title-b">
+                                <h3 class="dark-color font-alt bldd p-20px-t">Rawat Jalan</h3>
+                                <p>Pelajari lebih lanjut mengenai modul Rawat Jalan yang tersedia dalam sistem Assist.id.</p>
+                            </div>
+                            <hr>
+                            <div class="section-title-b p-30px-b sm-p-20px-b">
+                                <h5 class="dark-color1 font-alt bldd">Overview Rawat Jalan</h5>
+                                <p>Pada Modul Rawat Jalan berisi informasi Jadwal Praktek semua Dokter dan Jadwal Appointment Pasien. Secara default tampilan awal saat membuka Modul Rawat Jalan adalah Jadwal Praktek Dokter pada hari itu dengan pendaftaran jadwal rawat jalan pasien yang dibantu dengan Color Coding untuk melihat status pasien. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="pendaftaranrawatjalan">
+                                <h5 class="dark-color1 font-alt bldd">Cara Pendaftaran Rawat Jalan</h5>
+                                <p>Pendaftaran Pasien baik pasien BPJS maupun pasien umum pada sistem Assist.id sangat mudah dengan tampilan yang User Friendly. Anda bisa melakukannya dengan 2 cara, diantaranya: Pendaftaran melalui Tombol “Pendaftaran Baru” dan Pendaftaran melalui tampilan jadwal Dokter. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="reschedulerawatjalan">
+                                <h5 class="dark-color1 font-alt bldd">Cara Reschedule Pendaftaran Pasien</h5>
+                                <p>Anda dapat dengan mudah untuk melakukan Reschedule Appointment pasien / menjadwalkan ulang jadwal rawat jalan pasien. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="pasienbarurawatjalan">
+                                <h5 class="dark-color1 font-alt bldd">Cara Melakukan Pendaftaran Pasien Baru</h5>
+                                <p>Pada Modul Rawat Jalan Anda melakukan pendaftaran untuk pasien yang pertama kali datang ke Klinik Anda secara cepat dan mudah. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="kalenderrawatjalan">
+                                <h5 class="dark-color1 font-alt bldd">Cara Melakukan Block Kalender</h5>
+                                <p>Di dalam sistem Assist.id, Anda bisa memblok kalender satu atau semua dokter sekaligus. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                        </div>
+                        <!-- / -->
+
+                        <!--Registrasi-->
+                        <div id="registrasi" style="display: none;">
+                            <div class="section-title-b">
+                                <h3 class="dark-color font-alt bldd p-20px-t">Registrasi </h3>
+                                <p>Pelajari lebih lanjut mengenai modul Registrasi yang tersedia dalam sistem Assist.id.</p>
+                            </div>
+                            <hr>
+                            <div class="section-title-b p-30px-b sm-p-20px-b">
+                                <h5 class="dark-color1 font-alt bldd">Overview Registrasi</h5>
+                                <p>Pada Menu Registration Anda bisa melakukan Pendaftaran Baru pasien pada Rawat Jalan Poli, Gawat Darurat, Kunjungan Sehat, Promotif Preventif dan Kegiatan Kelompok. Di Menu ini juga disertai tabel data pendaftaran pasien lengkap dengan tujuan pendaftaran, jadwal dan status. Sehingga Anda dapat dengan mudah mengelola pendaftaran pasien di Klinik dengan melakukan konfirmasi pendaftaran, merubah status pasien, melakukan panggilan otomatis dan juga menampilkan antrian pasien. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="pendaftaranregistrasi">
+                                <h5 class="dark-color1 font-alt bldd">Cara Pendaftaran Registrasi Pasien</h5>
+                                <p>Dalam sistem Assist.id, berbeda dengan mendaftarkan kunjungan pasien pada menu Rawat Jalan yang hanya untuk pendaftaran Kunjungan Sakit, pada Menu Registration Anda bisa melakukan pendaftaran pasien untuk Kunjungan Sakit, Kunjungan Sehat dan Gawat Darurat. Serta Anda bisa melihat semua pendaftaran kunjungan pasien di Klinik dalam Tabel daftar pendaftaran pasien untuk setiap fasilitas yang ada di Klinik. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="pendaftaranpasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Melihat Pendaftaran Pasien</h5>
+                                <p>Anda bisa melihat semua pendaftaran yang ada di Klinik untuk pendaftaran di hari ini atau pada tanggal berikutnya dengan mudah. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="printpendaftaran">
+                                <h5 class="dark-color1 font-alt bldd">Cara Export dan Print Pendaftaran Pasien</h5>
+                                <p>Pada Modul Registrasi, Anda bisa melakukan export dan print pendaftaran pasien dengan mudah dan cepat. <a href="#" target="eksportdanprint">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="reschedulekunjungan">
+                                <h5 class="dark-color1 font-alt bldd">Reschedule Kunjungan Pasien</h5>
+                                <p>Pada Modul Registrasi, Anda bisa merubah jadwal Kunjungan pasien yang telah ada sebelumnya ke tanggal lain apabila pasien atau dokter terdapat halangan pada jadwal sebelumnya. Caranya sangat mudah untuk Reschedule jadwal kunjungan pasien. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="antrianotomatis">
+                                <h5 class="dark-color1 font-alt bldd">Cara Melakukan Panggilan Otomatis Antrian Pasien</h5>
+                                <p>Pada Modul Registrasi, Anda bisa melakukan panggilan otomatis antrian pasien dengan mudah dan cepat. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="antrianpasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Menampilkan Antrian Pasien di Layar</h5>
+                                <p>Pada Modul Registrasi, Anda bisa menampilkan antrian pasien di layar dengan mudah dan cepat. <a href="#" target="_blank">See more</a></p>
+                            </div>
+                        </div>
+                        <!-- / -->
+                        <!-- EMR -->
+                        <div id="EMR" style="display: none;">
+                            <div class="section-title-b">
+                                <h3 class="dark-color font-alt bldd p-20px-t">EMR</h3>
+                                <p>Pelajari lebih lanjut mengenai modul EMR yang tersedia dalam sistem Assist.id.</p>
+                            </div>
+                            <hr>
+                            <div class="section-title-b p-30px-b sm-p-20px-b">
+                                <h5 class="dark-color1 font-alt bldd">Overview EMR</h5>
+                                <p>Pada Modul EMR berisi informasi tentang cara mengetahui riwayat penyakit pasien, cara mengedit data diri pasien, pencarian cepat data pasien, mengubah status pasien, dan menggunakan color coding untuk mengetahui status pasien. <a href="https://blog.assist.id/tag/modul-emr/" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="editdatapasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Mengedit Data Diri Pasien</h5>
+                                <p>Untuk mengupdate data diri pasien dapat dilakukan dengan mudah pada modul registrasi, modul rawat jalan, dan menu EMR.                                    
+                                    <a href="https://blog.assist.id/cara-mengedit-data-diri-pasien-pada-modul-emt/amp/" target="frame_edit_pasien">See more</a>
+                                    <iframe name="frame_edit_pasien" height="500px" width="100%" style="border:none;"></iframe>
+                                
+                                </p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="editemrpasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Mengedit EMR Pasien</h5>
+                                <p>Apabila anda salah menginput data dalam EMR pasien atau ada data yang belum diinput, anda dapat mengedit EMR tersebut. 
+                                    <a href="https://blog.assist.id/cara-edit-emr-pasien-pada-modul-emr/amp/" target="frame_edit_emr">See more</a>
+                                    <iframe name="frame_edit_emr" height="800" width="100%" style="border:none;"></iframe>
+                                </p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="coretemrpasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Mencoret EMR Pasien</h5>
+                                <p>Rekan medis yang telah dicatat pada sistem bisa dicoret apabila terdapat kesalahan. 
+                                    <a href="https://blog.assist.id/cara-mencoret-rekam-medis-pada-modul-emr/amp/" target="frame_coret_emr">See more
+                                        <script>
+                                            $.getJSON("https://blog.assist.id/public/ghost-sdk.min.js?v=8560236dc3", function(data){
+                                                alert(data.query.results.json.json[0].v);
+                                            })
+                                        </script>
+                                    </a>
+                                </p>
+                                    <iframe name="frame_coret_emr" height="800" width="100%" style="border:none;"></iframe>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="printemrpasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Print EMR Pasien</h5>
+                                <p>Anda Dapat mencetak(print) hasil lab di EMR pasien dengan mudah dan cepat. 
+                                    <a href="https://blog.assist.id/cara-print-emr-pasien-pada-modul-emr/amp/" target="frame_print_emr">See more</a></p>
+                                    <iframe name="frame_print_emr" height="800" width="100%" style="border:none;"></iframe>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="hideandshowemr">
+                                <h5 class="dark-color1 font-alt bldd">Cara Menampilkan dan Menyembunyikan hasil EMR yang telah dicoret.</h5>
+                                <p>Anda dapat menyembunyikan dan menampilkan catatan medis yang dicoret dengan mudah. 
+                                    <a href="https://blog.assist.id/cara-print-emr-pasien-pada-modul-emr/amp/" target="frame_hide_emr">See more</a></p>
+                                    <iframe name="frame_hide_emr" height="800" width="100%" style="border:none;"></iframe>
+                            </div>
+                           
+                        </div>
+                        <!---->
+                        <!--APOTEK-->
+                        <div id="apotek" style="display: none;">
+                            <div class="section-title-b">
+                                <h3 class="dark-color font-alt bldd p-20px-t">Apotek</h3>
+                                <p>Pelajari lebih lanjut mengenai modul apotek yang tersedia dalam sistem Assist.id.</p>
+                            </div>
+                            <hr>
+                            <div class="section-title-b p-30px-b sm-p-20px-b">
+                                <h5 class="dark-color1 font-alt bldd">Overview Apotek</h5>
+                                <p>Pada Modul EMR berisi informasi tentang cara mengelola data obat, mengelola stok obat, membuat resep obat, mengedit dan menghapus data bahan habis pakai, melihat rekap pemakaian obat. <a href="https://blog.assist.id/tag/modul-emr/" target="_blank">See more</a></p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="riwayatkartustok">
+                                <h5 class="dark-color1 font-alt bldd">Cara melihat riwayat(history) kartu stok obat</h5>
+                                <p>
+                                    <script>
+                                        $.get("https://blog.assist.id/kontrol-obat-dengan-kartu-stok/").then(function(html){
+                                            var $main = $(html).find("#side-main");
+                                            document.write($main.html() );
+                                        }, function(){
+                                            document.write("access denied");
+                                        }
+                                        )
+                                    </script>
+                                </p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="editemrpasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Mengedit EMR Pasien</h5>
+                                <p>Apabila anda salah menginput data dalam EMR pasien atau ada data yang belum diinput, anda dapat mengedit EMR tersebut. 
+                                    <a href="https://blog.assist.id/cara-edit-emr-pasien-pada-modul-emr/amp/" target="frame_edit_emr">See more</a>
+                                    <iframe name="frame_edit_emr" height="800" width="100%" style="border:none;"></iframe>
+                                </p>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="coretemrpasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Mencoret EMR Pasien</h5>
+                                <p>Rekan medis yang telah dicatat pada sistem bisa dicoret apabila terdapat kesalahan. 
+                                    <a href="https://blog.assist.id/cara-mencoret-rekam-medis-pada-modul-emr/amp/" target="frame_coret_emr">See more</a></p>
+                                    <iframe name="frame_coret_emr" height="800" width="100%" style="border:none;"></iframe>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="printemrpasien">
+                                <h5 class="dark-color1 font-alt bldd">Cara Print EMR Pasien</h5>
+                                <p>Anda Dapat mencetak(print) hasil lab di EMR pasien dengan mudah dan cepat. 
+                                    <a href="https://blog.assist.id/cara-print-emr-pasien-pada-modul-emr/amp/" target="frame_print_emr">See more</a></p>
+                                    <iframe name="frame_print_emr" height="800" width="100%" style="border:none;"></iframe>
+                            </div>
+                            <div class="section-title-b p-30px-b sm-p-20px-b" id="hideandshowemr">
+                                <h5 class="dark-color1 font-alt bldd">Cara Menampilkan dan Menyembunyikan hasil EMR yang telah dicoret.</h5>
+                                <p>Anda dapat menyembunyikan dan menampilkan catatan medis yang dicoret dengan mudah. 
+                                    <a href="https://blog.assist.id/cara-print-emr-pasien-pada-modul-emr/amp/" target="frame_hide_emr">See more</a></p>
+                                    <iframe name="frame_hide_emr" height="800" width="100%" style="border:none;"></iframe>
+                            </div>
+                           
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / -->
+
+    <%- include('bodyscripts'); %>
+
+</main>
+<!-- / -->
+
+<!-- Footer -->
+    <div class="footer-copy gray-bg m-0px-t">
+        <div class="row">
+                <div class="col-12">
+                    <p style="color: gray;">FAQ | Kebijakan Privasi | Syarat dan Ketentuan |</p>
+                    <p style="color: gray;">2019 © Assist.id . All Rights Reserved.</p>
+                </div><!-- col -->
+        </div> <!-- row -->
+    </div> 
+<!-- footer-copy -->
+
+<!-- Jquery -->
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+<!-- End -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87809650-4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-87809650-4');
+
+    $(".list-bantuan").click(function(){
+        $(".list-bantuan, .list-bantuan").css("font-weight", "");
+        $(this).css("font-weight", "bold");
+    });
+</script>
+<!--end-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Plugin JS -->
+<script src="static/plugin/appear/jquery.appear.js"></script><!--appear-->
+<script src="static/plugin/bootstrap/js/popper.min.js"></script><!--popper-->
+<script src="static/plugin/bootstrap/js/bootstrap.js"></script><!--bootstrap-->
+<!-- End -->
+
+<!-- Custom -->
+
+<script src="static/js/jquery.parallax-scroll.js"></script>
+<script src="static/js/custom.js"></script>
+<!-- End -->
+
+</body>
+<!-- ========== End of Body ========== -->
+
+</html>
+

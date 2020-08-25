@@ -1,0 +1,18 @@
+<!-- Youtube difer -->
+<script>
+  window.onload = function () {
+      var handle = document.getElementsByTagName('iframe');
+      var img = document.getElementsByTagName('img');
+      for (var i = 0; i < handle.length; i++) {
+        if (handle[i].getAttribute('data-src')) {
+          handle[i].setAttribute('src', handle[i].getAttribute('data-src'));
+        }
+      }
+
+      for (var i = 0; i < img.length; i++) {
+        if (img[i].getAttribute('data-src')) {
+          img[i].setAttribute('src', img[i].getAttribute('data-src'));
+        }
+      }
+  };
+</script>

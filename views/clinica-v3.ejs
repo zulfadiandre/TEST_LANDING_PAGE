@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--start-->
+    <meta name="author" content="Assist.id" />
+    <meta name="google-site-verification" content="xaSOGYCxjaipS36lfuwWGfrYHzGC9D7SKHFztiC7HK0" />
+    <meta name="keyword" content="assist.id, software, klinik rumah sakit, puskesmas, manajemen klinik">
+    <meta name="description" content="Assist.id, solusi manajemen klinik, apotek, rumah sakit dengan teknologi sistem informasi, aplikasi klinik yang mengelola rekam medis, odontogram, antrian, konsultasi online, stok obat, laporan, kasir didukung BPJS P-Care...">
+    <meta property="og:site_name" content="Assist.id" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Assist.id - Software Aplikasi Klinik Umum, Gigi, Kecantikan, BPJS Terlengkap" />
+    <meta property="og:url" content="https://www.assist.id" />
+    <meta property="og:description" content="Assist.id, solusi manajemen klinik, apotek, rumah sakit dengan teknologi sistem informasi, aplikasi klinik yang mengelola rekam medis, odontogram, antrian, konsultasi online, stok obat, laporan, kasir didukung BPJS P-Care..." />
+    <!--end-->
+
+    <title>Assist.id - Software Aplikasi Klinik Pratama BPJS, Kecantikan, Hemodialisis dan Rumah Sakit</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico">
+
+    <!-- Plugin CSS -->
+    <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/plugin/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="static/plugin/et-line/style.css" rel="stylesheet">
+    <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+    <!-- End -->
+
+    <!-- Theme css -->
+    <link href="static/css/stylev3.css" rel="stylesheet">
+    <link href="static/css/color/defaultv3.css" rel="stylesheet" id="color_theme">
+    <!-- End -->
+    <%- include('scripts'); %>
+
+</head>
+
+<!-- Body Start -->
+<body data-spy="scroll" data-target="#navbar" data-offset="98">
+
+<!-- Loading -->
+<div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+</div>
+<!-- / -->
+
+<!-- Header Scroll -->
+<header>
+    <nav id="navbar-content" class="navbar header-clinica header-nav-dark navbar-expand-lg">
+        <div class="container">
+            <!-- Top Menu -->
+            <a class="navbar-brand" href="/" id="table">
+                <img  src="" data-src="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/logo.png" title="" alt="logo assist.id software klinik terbaik indonesia" style="max-height: 50px;">
+            </a>
+
+            <!-- Header Mobile-->
+            <div id="mobile">
+              <nav id="feature-nav" role="navigation">
+                <div class="navbar-header">
+                  <a class="navbar-brand navbar-toggle" style="color: #145DFF; font-size: 18px;"> Fitur Clinica</a>
+                  <i class="fa fa-caret-down m-dropdown-toggle fa-2x" data-toggle="collapse" data-target="#feature-nav .collapse" style="color: #000;"></i>
+                    <button class="navbar-toggler-clinica" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="navscroll collapse navbar-collapse justify-content-end font-alt">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <!-- Menu pendaftaran -->
+                        <li><a class="nav-link-clinica list-clinica" style="font-size: 17px;" href="#clinica-pendaftaran" >Pendaftaran</a></li>
+                        <!-- Menu rekam medis -->
+                        <li><a class="nav-link-clinica list-clinica" style="font-size: 17px;" href="#clinica-rekammedis" >Rekam Medis Elektronik (EMR)</a></li>
+                        <!-- Menu data obat -->
+                        <li><a class="nav-link-clinica list-clinica" style="font-size: 17px;" href="#clinica-stokobat" >Data Obat Farmasi Apotek</a></li>
+                        <!-- Menu pembayaran -->
+                        <li><a class="nav-link-clinica list-clinica" style="font-size: 17px;" href="#clinica-pembayaran" >Kasir Pembayaran POS</a></li>
+                        <!-- Menu laporan -->
+                        <li><a class="nav-link-clinica list-clinica" style="font-size: 17px;" href="#clinica-laporan" >Laporan Otomatis</a></li>
+                        <!-- Menu manajemen -->
+                        <li><a class="nav-link-clinica list-clinica" style="font-size: 17px;" href="#clinica-manajemen" >Manajemen Staff dan Pengeturan</a></li>
+                    </ul>
+                </div>
+              </nav>
+            </div>
+            
+            <div class="collapse navbar-collapse justify-content-end font-alt" id="navbar">
+                <ul class="navbar-nav ml-auto align-items-center" id="mobile">
+                    <!-- Menu Tipe Failitas Kesehatan -->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link bldd">Tipe Fasilitas Kesehatan</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu">
+                            <li><a href="/sistem-klinik-pratama-dan-utama-bpjs-online">Klinik Pratama dan Utama BPJS</a></li>
+                            <li><a href="/sistem-klinik-kecantikan">Klinik Kecantikan</a></li>
+                            <li><a href="/hemoda-sistem-klinik-hemodialisa-hemodialisis-indonesia">Klinik Hemodialisis</a></li>
+                            <li><a href="/sistem-praktek-mandiri-dokter-dan-bidan-perorangan">Praktek Mandiri Dokter dan Bidan</a></li>
+                            <li><a href="/sistem-manajemen-rumah-sakit-simrs">Rumah sakit</a></li>
+                            <li><a href="/sistem-apotek-dan-farmasi">Apotek dan Farmasi</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Solusi -->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link bldd">Solusi</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="solusi m-dropdown-menu">
+                            <li><a href="#">Online Booking Konsultasi Dokter</a></li>
+                            <li><a href="#">Pendaftaran Pasien</a></li>
+                            <li><a href="#">Rekam Medis Elektronik (EMR)</a></li>
+                            <li><a href="#">Data Stok obat Farmasi</a></li>
+                            <li><a href="#">Kasir dan Pembayaran (POS)</a></li>
+                            <li><a href="#">Laporan Otomatis</a></li>
+                            <li><a href="#">Manajemen Komisi, Bonus, Gaji, Staff </a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Produk -->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link bldd">Produk</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="produk m-dropdown-menu">
+                            <li><a href="/aplikasi-klinik-berbasis-web-clinica">Clinica</a></li>
+                            <li><a href="#">Hemoda</a></li>
+                            <li><a href="/simrs-sistem-informasi-manajemen-rumah-sakit-online">Hospita</a></li>
+                            <li><a href="/software-klinik-privata">Privata</a></li>
+                            <li><a href="/sistem-informasi-klinik-schedula">Schedula</a></li>
+                            <li><a href="/aplikasi-apotek-pharma">Pharma</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Harga -->
+                    <li><a class="nav-link bldd" href="/faq-sistem-informasi-klinik" >Harga</a></li>
+                    <!-- Menu Lainnya -->
+                    <li class="m-dropdown m-dropdown-multilevel">
+                        <a class="nav-link bldd">Lainnya</a>
+                        <i class="fa fa-angle-down m-dropdown-toggle"></i>
+                        <ul class="m-dropdown-menu">
+                            <li><a href="/bantuan">Bantuan</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="https://blog.assist.id/" target="_blank">Blog</a></li>
+                            <li><a href="/program-referral">Referral</a></li>
+                            <li><a href="/acara-kesehatan-assist-id">Acara Assist.id (Event)</a></li>
+                            <li><a href="/faq-sistem-informasi-klinik">Frequently Asked Questoins (FAQ)</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link-btn btn btn-theme m-25px-l md-m-0px-l" href="#form">Daftar Sekarang</a></li>
+                </ul>
+            </div>
+            <!-- / -->
+
+            <!--Header Scroll Web-->
+            <div class="navscroll collapse navbar-collapse justify-content-end font-alt">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <!-- Menu pendaftaran -->
+                    <li><a class="nav-link-clinica list-clinica" href="#clinica-pendaftaran" >Pendaftaran</a></li>
+                    <!-- Menu rekam medis -->
+                    <li><a class="nav-link-clinica list-clinica" href="#clinica-rekammedis" >Rekam Medis</a></li>
+                    <!-- Menu data obat -->
+                    <li><a class="nav-link-clinica list-clinica" href="#clinica-stokobat" >Data Stok Obat</a></li>
+                    <!-- Menu pembayaran -->
+                    <li><a class="nav-link-clinica list-clinica" href="#clinica-pembayaran" >Pembayaran</a></li>
+                    <!-- Menu laporan -->
+                    <li><a class="nav-link-clinica list-clinica" href="#clinica-laporan" >Laporan</a></li>
+                    <!-- Menu manajemen -->
+                    <li><a class="nav-link-clinica list-clinica" href="#clinica-manajemen" >Manajemen</a></li>
+                    <!-- Menu harga -->
+                    <li><a class="nav-link-clinica" href="/harga">Harga</a></li>
+                    <li><a class="nav-link-clinica-btn btn btn-theme m-25px-l md-m-0px-l" href="#form">Daftar Sekarang</a></li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+    </nav>
+</header>
+
+<!-- Header Biru -->
+<header>
+    <nav id="navbar-header-blue" class="navbar header-biru header-nav-dark navbar-expand-lg">
+        <div class="container">
+        <a>Sistem Aplikasi Klinik Terbaik di Indonesia</a>
+        <a>Hubungi Kami 0813-1000-0949 | Senin - Jumat (08.30 - 17.30 WIB)</a>
+        </div>
+    </nav>
+</header>
+<!-- Header Biru End -->
+
+<!-- Header Putih -->
+<header>
+    <nav id="navbar-header-white" class="navbar header-nav header-nav-dark navbar-expand-lg">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="/">
+                <img  src="" data-src="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/logo.png" title="" alt="logo assist.id software klinik terbaik indonesia" style="max-height: 50px;">
+            </a>
+            <!-- / -->
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- / -->
+
+            <!-- Top Menu -->
+            <%- include('header-v3'); %>
+            <!-- / -->
+
+        </div><!-- Container -->
+    </nav> <!-- Navbar -->
+</header>
+<!-- Header Putih End -->
+
+<!-- Main -->
+<main>
+
+    <!--
+    =============================
+      Home Banner
+    =============================
+    -->
+
+    <section id="home" class="home-banner-01 bg-effect-box">
+        <div class="bg-effect bg-cover bg-fixed"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center p-100px-tb md-p-35px-b">
+                <div class="col-lg-9 col-md-10 judul text-center p-50px-t p-20px-b">
+                    <div>
+                        <h5 class="theme-after dark-color">Kelola Klinik Lebih Mudah Pakai Assist.id</h5>
+                        <img class="bendera1" src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-indonesia-32.png" title="" alt="icon bendera">
+                    </div>
+                    <h1 class="font-alt dark-color">Cukup Satu Aplikasi Klinik Lengkap Kembangkan Bisnis Klinik Anda</h1>
+                    <h6 class="dark-color font-alt bldd sm-p-10px-b">Dipercaya lebih dari 130+ Fasilitas Kesehatan tersebar diberbagai kota di indonesia.</h6>
+                    <p class="large-text2 dark-color1 sm-m-15px-b">Operasional klinik menjadi lebih terpantau, Seluruh laporan lengkap otomatis.</p>
+                    <a href="#form" class="lihat-fitur">Mau lihat fitur Clinica yang mana dulu?</a></label>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-xs-6">
+                    <div class="row text-center justify-content-center">
+                      <div class="col-lg-4 col-md-4 col-xs-4 m-15px-tb" style="width: 33%;">
+                        <a href="#clinica-pendaftaran">
+                          <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Booking-Konsultasi-Online-Dokter-Praktek-Klinik.png" title="" alt="booking" width="20%">
+                        </a>
+                          <div class="p-15px-t">
+                            <h5 class="btn-fitur cta-cent"><a class="btn-fitur cta-cent" href="#clinica-pendaftaran">Pendaftaran</a></h5>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-xs-4 m-15px-tb" style="width: 34%;">
+                        <a href="#clinica-rekammedis">
+                          <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Catat-Rekam-Medis-Pasien-Elektronik-EMR-Online-Klinik-Dokter.png" title="" alt="rekam medis" width="15%">
+                        </a>  
+                          <div class="p-15px-t">
+                            <h5 class="btn-fitur cta-cent"><a class="btn-fitur cta-cent" href="#clinica-rekammedis">Rekam Medis</a></h5>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-xs-4 m-15px-tb" style="width: 33%;">
+                        <a href="#clinica-stokobat">
+                          <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Data-Stok-Obat-Apotek-Farmasi-Klinik.png" title="" alt="stok obat" width="27%">
+                        </a> 
+                          <div class="p-15px-t">
+                            <h5 class="btn-fitur cta-cent"><a class="btn-fitur cta-cent" href="#clinica-stokobat">Data Stok Obat</a></h5>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                  <div class="col-lg-6 col-md-12 col-xs-6">
+                    <div class="row text-center justify-content-center">
+                      <div class="col-lg-4 col-md-4 col-xs-4 m-15px-tb" style="width: 33%;">
+                        <a href="#clinica-pembayaran">
+                          <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Kasir-Pembayaran-POS-Klinik.png" title="" alt="pembayaran" width="23%">
+                        </a>
+                          <div class="p-15px-t">
+                            <h5 class="btn-fitur cta-cent"><a class="btn-fitur cta-cent" href="#clinica-pembayaran">Pembayaran</a></h5>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-xs-4 m-15px-tb" style="width: 34%;">
+                        <a href="#clinica-laporan">
+                          <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Laporan-Otomatis-Klinik.png" title="" alt="kasir" width="20%">
+                        </a>  
+                          <div class="p-15px-t">
+                            <h5 class="btn-fitur cta-cent"><a class="btn-fitur cta-cent" href="#clinica-laporan">Laporan</a></h5>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-xs-4 m-15px-tb" style="width: 33%;">
+                        <a href="#clinica-manajemen">
+                          <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Manajemen-Akun-Hak-Akses-Staff-Klinik.png" title="" alt="manajemen" width="25%">
+                        </a>
+                          <div class="p-15px-t">
+                            <h5 class="btn-fitur cta-cent"><a class="btn-fitur cta-cent" href="#clinica-manajemen">Manajemen</a></h5>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / -->
+
+    <!--
+    ============================================================
+     Clinica adalah Aplikasi Klinik Berbasis Cloud Assist.id
+    ============================================================
+    -->
+    <section id="feature" class="section-kelola shapes-section bg-effect-box ">
+        <div class="bg-effect bg-fixed bg-center-center"></div>
+        <div class="container p-100px-b md-p-0px-b sm-p-0px-b">
+
+            <div class="row justify-content-center sm-m-25px-b">
+                <div class="col-md-7 aifrem sm-p-180px-t sm-m-15px-lr">
+                    <iframe class="aifrem-clinica" src="" data-src="https://www.youtube.com/embed/H_f_DGV7v5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+                
+                <div class="clinicacloud col-lg-10 col-md-10 sm-p-30px-t">
+                    <div class="section-title text-center">
+                         <h4 class="dark-color font-alt bldd p-10px-b sm-m-30px-lr line">Clinica adalah Aplikasi Klinik Berbasis Cloud Assist.id</h4>
+                        <p>Sistem mencakup seluruh fitur yang Anda butuhkan - mulai dari operasional seperti pendaftaran pasien, rekam medis, farmasi dan pembayaran - hingga laporna klinik otomatis sehingga Anda dapat lebih fokus mengembangkan bisnis dan memberikana pelayanan kesehatan terbaik kepada masyarakat Indonesia.</p><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / -->
+
+    <!--
+    ============================================================
+     Pendaftaran
+    ============================================================
+    -->
+    <section id="content-section" class="clinica-section">
+        <div id="clinica-pendaftaran">
+            <div class="container p-110px-l md-p-15px-l sm-15px-l ">
+                <div class="heading timeline-pendaftaran">
+                    <div>
+                        <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Booking-Konsultasi-Online-Dokter-Praktek-Klinik.png" title="" alt="booking" class="icon-booking">
+                    </div>
+                    <h4 class="bldd p-80px-l sm-p-0px-l" style="color: #145DFF;"><u class="sm-p-15px-l">PENDAFTARAN</u></h4>
+                </div>
+                <!--Pendaftaran Lebih Cepat-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/1 - Pendaftaran-klinik-lebih-cepat-fitur-sistem-klinik.png" alt="pendaftaran lebih cepat" style="border-radius: 10px;">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Pendaftaran Lebih Cepat</h4>
+                            <p>Tidak perlu waktu lama untuk mencari nama pasien di lemari klinik. Pencarian data pasien menjadi lebih cepat dan mudah karena admisi dapat melakukan pencarian berdasarkan Nama, No. KTP, No. BPJS, Tanggal Lahir, No. HP hingga Alamat Pasien dari sistem Clinica.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/1 - Pendaftaran-klinik-lebih-cepat-fitur-sistem-klinik.png" alt="pendaftaran lebih cepat" style="border-radius: 10px;">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Scheduling Jadwal Pasien-->
+                <div class="col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/2-scheduling-jadwal-pasien-klinik-mudah.png" alt="scheduling jadwal pasien klinik mudah">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Scheduling Jadwal Pasien</h4>
+                            <p class="dark-color1">Kalender klinik Anda memainkan peran yang sangat penting. Dengan Assist.id, Anda dapat dengan mudah:</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Lihat jadwal klinik dengan timetable & timeline view. 
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Lihat slot waktu yang tersedia.
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Mudah melakukan reschedule.
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Mudah lihat status pasien secara real time.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Antrian & Panggilan Otomatis-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 aifrem sm-p-180px-t sm-m-15px-lr" id="mobile">
+                            <iframe class="aifrem-antrian" src="" data-src="https://www.youtube.com/embed/fr9qNy9uqOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l sm-p-20px-t">
+                            <h4 class="font-alt">Antrian & Panggilan Otomatis</h4>
+                            <p>Karyawan klinik dapat mudah menginformasikan antrian melalui TV Klinik dan memanggil pasien untuk keruangan dokter secara otomatis dari sistem Assist.id. Sehingga brand klinik lebih profesional dan pasien semakin nyaman di klinik Anda.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 aifrem sm-p-180px-t sm-m-15px-lr" id="table">
+                            <iframe class="aifrem-antrian" src="" data-src="https://www.youtube.com/embed/fr9qNy9uqOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Booking Konsultasi Online-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 aifrem sm-p-180px-t sm-m-15px-lr">
+                            <iframe class="aifrem-booking" src="" data-src="https://www.youtube.com/embed/vpwKF9J-qKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l sm-p-20px-t">
+                            <h4 class="font-alt">Booking Konsultasi Online</h4>
+                            <p class="dark-color1">Aktifkan fitur booking online untuk memudahkan pasien dalam menentukan jadwal dan mempercepat bagian pendaftaran untuk konfirmasi jadwal konsultasi.</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Meningkatkan visibilitas marketing online klinik
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Menurunkan kepadatan ruang tunggu di klinik
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Dapat dilakukan dari aplikasi pasien dan web klinik
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Bridging BPJS P-Care-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/5-sistem-bisa-bridging-bpjs-standar-icd10-aplikasi-klinik-assist-id.png" alt="bridging bpjs p-care">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Bridging BPJS P-Care</h4>
+                            <p>Klinik Anda bekerjasama dengan BPJS? Tidak perlu khawatir, sistem klinik Assist.id dapat di bridging dengan aplikasi BPJS P-Care sehingga klinik tidak perlu lagi input ke banyak sistem, cukup input di sistem Assist.id</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/5-sistem-bisa-bridging-bpjs-standar-icd10-aplikasi-klinik-assist-id.png" alt="bridging bpjs p-care">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Layani Pasien Lab/MCU Mudah-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/6-klinik-melayani-pasien-mcu-dan-lab-mudah.png" alt="layani pasien lab">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Layani Pasien Lab/MCU Mudah</h4>
+                            <p class="dark-color1">Apakah Klinik Anda memiliki layanan laboratorium dan Medical Check Up (MCU)? Kini Klinik tidak perlu pusing lagi mengurus ribuan pasien lab dan di Klinik,  pendaftaran lebih mudah menggunakan Assist.id bisa dari sistem Clinica langsung atau pasien mendaftar ke aplikasi pasien Assist.id</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Pasien Bayar DP / Full Diawal-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-50px-t p-100px-b sm-p-20px-t sm-p-50px-b">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/7-sistem-klinik-lengkap-pasien-bayar-DP-down-payment-Full-bayar-penuh-Diawal.png" alt="pasien bayar dp">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Pasien Bayar DP / Full Diawal</h4>
+                            <p>Assist.id memiliki fitur yang memudahkan Klinik menerima transaksi yang membutuhkan pembayaran full diawal ataupun dp sebelum tindakan.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/7-sistem-klinik-lengkap-pasien-bayar-DP-down-payment-Full-bayar-penuh-Diawal.png" alt="pasien bayar dp">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+    
+        <div id="clinica-rekammedis">
+            <div class="container p-110px-l md-p-15px-l sm-15px-l ">
+                <div class="heading timeline-rekammedis">
+                    <div>
+                        <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Catat-Rekam-Medis-Pasien-Elektronik-EMR-Online-Klinik-Dokter.png" title="" alt="rekam medis" class="icon-rekammedis">
+                    </div>
+                    <h4 class="bldd p-80px-l content-center" style="color: #145DFF;"><u>REKAM MEDIS ELEKTRONIK (EMR)</u></h4>
+                </div>
+                <!--Jenis Rekam Medis Lengkap-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/8-jenis-rekam-medis-elektronik-emr-lengkap-sistem-riwayat-pasien-odontogram-soap-alergi-dokter-fasilitas-kesehatan.png" alt="jenis rekam medis">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Jenis Rekam Medis Lengkap</h4>
+                            <p>Tulis rekam medis secara bebas menggunakan berbagai format Assist.id yang Anda butuhkan.</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Riwayat Penyakit dan Alergi Pasien
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Pencatatan Catatan Dokter (SOAP)
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Odontogram Interaktif & Upload Foto Gigi
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Melakukan Order Laboratorium
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Masih banyak lagi ++
+                            </h6>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/8-jenis-rekam-medis-elektronik-emr-lengkap-sistem-riwayat-pasien-odontogram-soap-alergi-dokter-fasilitas-kesehatan.png" alt="jenis rekam medis">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Standar ICD 10 & Unggah File-->
+                <div class="col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/9-rekam-medis-elektronik-Standar-ICD-10-icd10-bisa-Unggah-File-dokumen-sistem-klinik.png" alt="standar ICD 10">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Standar ICD 10 & Unggah File</h4>
+                            <p class="dark-color1">Penulisan rekam medis diagnosa pasien di sistem Assist.id mudah dengan standar ICD 10. Dokter dapat menambah catatan bebas serta dapat mengupload file yang diperlukan mulai dari unggah berkas, dokumen, foto before after atau apapun yang dibutuhkan terkait diagnosa pasien.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Lihat Stok Obat Real Time-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/10-aplikasi-apotek-sistem-farmasi-stok-obat-rekam-medis-dokter-resep-e-resep.png" alt="lihat stok obat">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Lihat Stok Obat Real Time</h4>
+                            <p>Dokter dapat memberikan resep sekaligus melihat stok obat yang tersedia di bagian farmasi. Jika obat kosong, dokter dapat dengan mudah meresepkan obat lain tanpa perlu bolak balik ke apotek klinik. Bagian farmasi akan langsung menerima orderan dari dokter karena sistem sudah terintegrasi.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/10-aplikasi-apotek-sistem-farmasi-stok-obat-rekam-medis-dokter-resep-e-resep.png" alt="lihat stok obat">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Hemat Biaya ATK Bulanan-->
+                <div class="col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/11-biaya-atk-hemat-klinik-aplikasi-sistem-terbaik.png" alt="hemat biaya atk bulanan">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Hemat Biaya ATK Bulanan</h4>
+                            <p class="dark-color1">Pengeluaran klinik menjadi lebih hemat dan efektif. Tidak ada lagi ruangan sempit dan biaya pengeluaran bulanan yang banyak dalam pembelian kebutuhan ATK dan lemari penyimpanan rekam medis. Operasional menjadi lebih maksimal.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Rekam Medis Advanced-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/12-rekam-medis-elektronik-emr-dokter-catatan-organ-approval-lab-laboratorium-vital-sign-lembar-obgyn-dokter-di-klinik.png" alt="rekam medis cepat advanced">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Rekam Medis Advanced</h4>
+                            <p>Berbagai jenis rekam medis lebih advanced tersedia untuk pengguna fitur Clinica Pro, diantaranya :</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;RM Catatan Organ & Kondisi Normal
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Pencatatan Lembar Observasi Setiap Jam
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Memberikan Warning Bila Hasil Lab Tidak Normal
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Masih banyak lagi ++
+                            </h6>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/12-rekam-medis-elektronik-emr-dokter-catatan-organ-approval-lab-laboratorium-vital-sign-lembar-obgyn-dokter-di-klinik.png" alt="rekam medis cepat advanced">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Approval Hasil Laboratorium-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-70px-t p-100px-b sm-p-10px-t sm-p-50px-b">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/13-approval-sistem-laboratorium-oleh-dokter-di-klinik.png" alt="approval hasil laboratorium">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Approval Hasil Laboratorium</h4>
+                            <p class="dark-color1">Kehadiran laboratorium klinik sangat penting adanya dalam memantau kesehatan seseorang. Jika hasil pemeriksaan telah benar maka dokter penanggung jawab dapat melakukan approval hasil laboratorium dengan mudah dari sistem Assist.id.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+
+        <div id="clinica-stokobat">
+            <div class="container p-110px-l md-p-15px-l sm-15px-l ">
+                <div class="heading timeline-stokobat">
+                    <div>
+                        <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Data-Stok-Obat-Apotek-Farmasi-Klinik.png" title="" alt="stok obat" class="icon-stokobat">
+                    </div>
+                    <h4 class="bldd p-80px-l sm-p-0px-l" style="color: #145DFF;"><u class="sm-p-15px-l">DATA OBAT FARMASI APOTEK</u></h4>
+                </div>
+                <!--E-Resep Terintegrasi-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/14-fitur-farmas-eresep-terintegrasi.png" alt="E-Resep terintegrasi">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">E-Resep Terintegrasi</h4>
+                            <p>Data stok obat apotek langsung ditampilkan real time saat dokter meresepkan pasien di EMR.</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Terhubung dengan stok obat bagian farmasi
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Mengurangi bolak balik ke bagian farmasi
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Komunikasi lebih efektif
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Konsultasi lebih cepat dan nyaman
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Farmasi dapat langsung segera menyiapkan obat
+                            </h6>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/14-fitur-farmas-eresep-terintegrasi.png" alt="E-Resep terintegrasi">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Multi Depot Stok Obat-->
+                <div class="col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/15-multidepot-depot-obat-apotek-farmasi-sistem-kartu-stok-obat-digital.png" alt="multi obat stok obat">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Multi Depot Stok Obat</h4>
+                            <p class="dark-color1">Sistem Assist.id memungkinkan klinik untuk melacak penggunaaan obat berdasarkan lokasi depotnya. Depot obat dapat disesuaikan sesuai tata letaknya di klinik mulai dari ruangan dokter, gudang hingga apotek.</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Klinik dapat mengetahui lokasi dan stok obat yang tersedia secara real time.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Buat Obat Racikan Mudah-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/16-catat-obat-racikan-farmasi-mudah-apotek-dan-klinik.png" alt="buat obat racikan mudah">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Buat Obat Racikan Mudah</h4>
+                            <p>Klinik butuh menambahkan racikan obat untuk pasien? Sistem Assist.id mampu menyimpan berbagai racikan obat / puyer di klinik Anda dengan rapi serta isi kandungannya.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/16-catat-obat-racikan-farmasi-mudah-apotek-dan-klinik.png" alt="buat obat racikan mudah">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Seluruh Obat Terlacak-->
+                <div class="col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/17-seluruh-obat-terlacak-digital-kartu-stok-obat-fitur-apotek-farmasi-klinik.png" alt="seluruh obat terlacak">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Seluruh Obat Terlacak</h4>
+                            <p class="dark-color1">Mengetahui pergerakan obat adalah hal yang penting. Lihat seluruh obat masuk dan keluar dengan mudah menggunakan fitur kartu stok obat digital Assist.id</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Lihat keterangan obat keluar dan obat masuk
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Mencatat staf penanggung jawab yang bertugas
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Laporan kartu stok obat digital
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                 <!--Peringatan Stok Obat Otomatis-->
+                 <div class="col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/18-peringatan-stok-obat-otomatis-dan-obat-ed-kadaluarsa-apotek-di-klinik-sistem-aplikasi.png" alt="peringatan stok obat otomatis">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Peringatan Stok Obat Otomatis</h4>
+                            <p>Klinik dapat dengan mudah melihat notifikasi peringatan / warning untuk stok obat yang akan habis dan akan kadaluarsa.</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Set minimum jumlah obat peringatan habis
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Set minimum expired date obat per batch
+                            </h6>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/18-peringatan-stok-obat-otomatis-dan-obat-ed-kadaluarsa-apotek-di-klinik-sistem-aplikasi.png" alt="peringatan stok obat otomatis">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Fitur Advanced Farmasi-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-70px-t p-100px-b sm-p-10px-t sm-p-50px-b">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/19-mudah-cetak-label-apotek-pakai-sistem-klinik-farmasi-terbaik.png" alt="fitur advanced farmasi">
+                        </div>
+                        <div class="normal col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Fitur Advanced Farmasi</h4>
+                            <p class="dark-color1">Berbagai fitur lebih advanced tersedia untuk pengguna fitur Clinica Pro, diantaranya :</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Mencetak label obat di bagian apotek
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Multi Harga Obat
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Apoteker dapat melakukan iter resep obat
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Masih banyak lagi ++
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+
+        <div id="clinica-pembayaran">
+            <div class="container p-110px-l md-p-15px-l sm-15px-l ">
+                <div class="heading timeline-pembayaran">
+                    <div>
+                        <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Kasir-Pembayaran-POS-Klinik.png" title="" alt="pembayaran" class="icon-pembayaran">
+                    </div>
+                    <h4 class="bldd p-80px-l sm-p-0px-l" style="color: #145DFF;"><u class="sm-p-15px-l">KASIR PEMBAYARAN (POS)</u></h4>
+                </div>
+                <!--Print & Download Struk-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/20-farmasi-cetak-struk-kasir-pembelian-berobat-di-klinik-pakai-sistem-aplikasi-klinik-terbaik.png" alt="print dan download struk">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Print & Download Struk</h4>
+                            <p>Memudahkan Anda print struk transaksi karena sistem Assist.id saling terintegrasi antara fiturnya.</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Terhubung dengan stok obat bagian farmasi
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Mengurangi bolak balik ke bagian farmasi
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Komunikasi lebih efektif
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Konsultasi lebih cepat dan nyaman
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Farmasi dapat langsung segera menyiapkan obat
+                            </h6>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/20-farmasi-cetak-struk-kasir-pembelian-berobat-di-klinik-pakai-sistem-aplikasi-klinik-terbaik.png" alt="print dan download struk">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Fitur Hutang Piutang-->
+                <div class="col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/21-sistem-klinik-dan-apotek-terbaik-fitur-hutang-piutang.png" alt="fitur hutang piutang">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Fitur Hutang Piutang</h4>
+                            <p class="dark-color1">Klinik dapat ternotifikasi hutang saat pasien di daftarkan di bagian admisi yang terhubung langsung pada fitur hutang di kasir. Ketika restock / return obat dan bhp data invoice akan terhubung ke hutang piutang di kasir.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Fitur Tutup Buku Mudah-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/22-fitur-tutup-buku-mudah-sistem-aplikasi-klinik-dan-apotek.png" alt="fitur tutup buku">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Fitur Tutup Buku Mudah</h4>
+                            <p>Detail rincian riwayat transaksi klinik dapat mudah dilihat. Laporan hasil tutup buku akan muncul di laporan keuangan tutup buku sistem Assist.id. Klinik dapat mengatur tanggal dan jam yang ditentukan.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/22-fitur-tutup-buku-mudah-sistem-aplikasi-klinik-dan-apotek.png" alt="fitur tutup buku">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Fitur Advanced Farmasi-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-70px-t p-100px-b sm-p-10px-t sm-p-50px-b">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/22-sistem-klinik-dan-apotek-aplikasi-kamar-rawat-inap-clinica-pro.png" alt="fitur advanced farmasi">
+                        </div>
+                        <div class="normal col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Fitur Advanced Farmasi</h4>
+                            <p class="dark-color1">Berbagai fitur lebih advanced tersedia untuk pengguna fitur	 Clinica Pro, diantaranya :</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Katalog Medical Check Up & Kamar Rawat Inap
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Pencatatan Transaksi non-medis
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Masih banyak lagi ++
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+
+        <div id="clinica-laporan">
+            <div class="container p-110px-l md-p-15px-l sm-15px-l ">
+                <div class="heading timeline-laporan">
+                    <div>
+                        <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Laporan-Otomatis-Klinik.png" title="" alt="kasir" class="icon-kasir">
+                    </div>
+                    <h4 class="bldd p-80px-l sm-p-0px-l" style="color: #145DFF;"><u class="sm-p-15px-l">LAPORAN OTOMATIS</u></h4>
+                </div>
+                <!--Laporan Otomatis Lengkap-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/23-sistem-klinik-laporan-lengkap-otomatis-keuangan-pendapatan-pasien-terbanyak-morbid-laporan-dokter-pasien-diagnosa.png" alt="laporan otomatis lengkap">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Laporan Otomatis Lengkap</h4>
+                            <p>Tidak perlu repot lagi membuat laporan di klinik, kini laporan klinik menjadi Otomatis dan Mudah.</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Laporan Pengeluaran dan Pemasukan Klinik
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Laporan Diagnosa Terbanyak
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Laporan Obat Fast Moving dan Slow Moving
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Laporan Tindakan Pasien Per Tenaga Medis
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Masih banyak lagi ++
+                            </h6>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/23-sistem-klinik-laporan-lengkap-otomatis-keuangan-pendapatan-pasien-terbanyak-morbid-laporan-dokter-pasien-diagnosa.png" alt="laporan otomatis lengkap">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Data Statistik Untuk Marketing-->
+                <div class="col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/23-grafik-laporan-sistem-klinik-clinica-pro-assist-id.png" alt="data statistik untuk marketing">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Data Statistik Untuk Marketing</h4>
+                            <p class="dark-color1">Ingin mengambil keputusan bisnis dan marketing berdasarkan analisis data pasien di klinik? Lihat usia pasien terbanyak dan tren di klinik lebih mudah. </p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Grafik Jenis Kelamin dan Usia Pasien Klinik
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Grafik Pendidikan Terakhir dan Status Pernikahan
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Metode Pembayaran Terbanyak
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Masih banyak lagi ++
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Format Laporan Advanced-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/24-Laporan-Total-Nilai-Aset-Obat-Laporan-lengkap-sistem-klinik-clinica-pro.png" alt="format laporan advanced">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Format Laporan Advanced</h4>
+                            <p>Berbagai fitur lebih advanced tersedia untuk pengguna fitur Clinica Pro, diantaranya :</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Laporan Total Nilai Aset Obat
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Laporan Morbid Puskesmas
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Fraud Detection
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Laporan Laboratorium & MCU
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Masih banyak lagi ++
+                            </h6>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/24-Laporan-Total-Nilai-Aset-Obat-Laporan-lengkap-sistem-klinik-clinica-pro.png" alt="format laporan advanced">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Laporan Otomatis ke Email-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-70px-t p-100px-b sm-p-10px-t sm-p-50px-b">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/25-laporan-sistem-klinik-langsung-otomatis-ke-email-manajemen.png" alt="laporan otomatis ke email">
+                        </div>
+                        <div class="normal col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Laporan Otomatis ke Email</h4>
+                            <p class="dark-color1">Pemantauan operasional dan laporan klinik lebih mudah dengan mengaktifkan fitur kirim ringkasan laporan klinik otomatis ke email manajemen dan pemilik klinik. Sehingga Anda dapat selalu mengetahui perkembangan bisnis Klinik dengan mudah.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+        
+        <div id="clinica-manajemen">
+            <div class="container p-110px-l md-p-15px-l sm-15px-l ">
+                <div class="heading timeline-manajemen">
+                    <div>
+                        <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/Fitur-Manajemen-Akun-Hak-Akses-Staff-Klinik.png" title="" alt="manajemen" class="icon-manajemen">
+                    </div>
+                    <h4 class="bldd p-80px-l sm-p-125px-l line" style="color: #145DFF;"><u>MANAJEMEN STAFF & PENGATURAN</u></h4>
+                </div>
+                <!--Berbagai Hak Akses Tersedia-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/26-berbagai-hak-akses-tersedia-sistem-aplikasi-klinik-apotek-bpjs-umum-pratama-gigi-kulit-kecantikan.png" alt="berbagai hak akses tersedia">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Berbagai Hak Akses Tersedia</h4>
+                            <p>Setiap karyawan akan mendapatkan akun di sistem Assist.id. Batasi area akses kontrol pengguna berdasarkan tipe akses atau custom sesuai kebutuhan. </p>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/26-berbagai-hak-akses-tersedia-sistem-aplikasi-klinik-apotek-bpjs-umum-pratama-gigi-kulit-kecantikan.png" alt="berbagai hak akses tersedia">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Manajemen Komisi & Payroll-->
+                <div class="col-lg-12 col-md-12 vl p-70px-t sm-p-10px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/27-Manajemen-Komisi-dan-Payroll-tenaga-medis-dokter-klinik-apotek.png" alt="manajemen komisi">
+                        </div>
+                        <div class="scheduling col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Manajemen Komisi & Payroll</h4>
+                            <p class="dark-color1">Pencatatan penggajian karyawan mudah menggunakan fitur payroll. Komisi di dalam klinik juga dapat dihitung secara otomatis sehingga Anda tidak lagi terbebani untuk menghitung jasa dan komisi secara manual.</p>
+                            <h6 class="bagian">
+                                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Grafik Jenis Kelamin dan Usia Pasien Klinik
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Grafik Pendidikan Terakhir dan Status Pernikahan
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Metode Pembayaran Terbanyak
+                                <br>
+                                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-checkmark-16.png" title="" alt="icon checkmark" width="5%">
+                                    &nbsp;Masih banyak lagi ++
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Export dan Import Data-->
+                <div class="col-lg-12 col-md-12 vl p-50px-t sm-p-20px-t">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b" id="mobile">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/28-export-import-data-aplikasi-sistem-klinik-apotek.png" alt="export dan import data">
+                        </div>
+                        <div class="pendaftaran col-lg-6 col-md-6 sm-p-30px-l">
+                            <h4 class="font-alt">Export dan Import Data</h4>
+                            <p>Tidak repot saat penggunaan pertama, Anda cukup melakukan export dari sistem lama dengan form csv atau excel lalu mudah tinggal upload data lama klinik ke Assist.id and you’re ready!</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="table">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/28-export-import-data-aplikasi-sistem-klinik-apotek.png" alt="export dan import data">
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+
+                <!--Fitur Akreditasi Klinik-->
+                <div class="home-fitur-01 col-lg-12 col-md-12 vl p-70px-t p-50px-b sm-p-10px-t sm-p-30px-b">
+                    <div class="row align-items-center p-110px-l md-p-0px-l sm-30px-l">
+                        <div class="col-lg-6 col-md-6 p-20px-b">
+                            <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/29-fitur-akreditasi-klinik-sistem-aplikasi-apotek.png" alt="fitur advanced klinik">
+                        </div>
+                        <div class="normal col-lg-6 col-md-6 sm-p-30px-l">
+                            <div class="std-box md-p-0px-lr md-m-40px-t sm-m-10px-t">
+                                <h5 class="large-text1 theme-after dark-color"><img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-crown-64.png" title="" alt="icon crown" width="15%" class="p-5px-b"> Fitur Clinica Pro</h5>
+                            </div>
+                            <h4 class="font-alt">Fitur Akreditasi Klinik</h4>
+                            <p class="dark-color1">Gunakan fitur akreditasi klinik dari Assist.id untuk mempermudah melihat transparansi proses kegiatan, laporan dan dokumentasi akreditasi ke manajemen dan pemilik klinik. Tidak perlu lagi rak buku dan ruangan penyimpanan khusus berkas akreditasi.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+        </div> 
+    </section>
+    
+    <!--
+    ====================================
+        KELOLA KLINIK LEBIH MUDAH HARI INI
+    ====================================
+    -->
+    <section class="section gray-bg">
+    <div class="container" id="form">
+        <div class="row justify-content-center m-45px-b sm-m-25px-b">
+            <div class="col-lg-12 col-md-10"><br/>
+                <div class="section-title text-center">
+                    <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/icons8-star-filled-64.png" title="" alt="icon star" class="icon-star">
+                    <br/><br/>
+                    <h4 class="dark-color font-alt bldd">KELOLA KLINIK LEBIH MUDAH HARI INI</h4>
+                    <p class="m-0px dark-color1 sm-p-30px-lr">130+ Fasilitas Kesehatan Sudah Mendaftar. Klinik Anda Kapan?.</p>
+                <br/>
+                <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <form class="contactform" method="post" action="/reqdemokelolaklinik">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="hidden" id="url" name="url" value="/aplikasi-apotek-pharma">
+                                <input type="hidden" id="frombutton" name="frombutton" value="cta aplikasi-apotek-pharma">
+                                <input id="usname" name="usname" type="text" placeholder="Nama (Sesuai ID/KTP)*" class="validate form-control" required>
+                                <span class="input-focus-effect theme-bg"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <input id="jabatan" type="text" placeholder="Jabatan*" name="jabatan" class="validate form-control" required>
+                            <span class="input-focus-effect theme-bg"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="phonenumber" type="text" placeholder="Nomor Whatsapp*" name="phonenumber" class="validate form-control" required>
+                                <span class="input-focus-effect theme-bg"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <input id="email" type="email" placeholder="Alamat Email*" name="email" class="validate form-control" required>
+                            <span class="input-focus-effect theme-bg"></span>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="medname" type="text" placeholder="Nama Fasilitas Kesehatan*" name="medname" class="validate form-control" required>
+                                <span class="input-focus-effect theme-bg"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="city" type="text" placeholder="Kota/Kabupaten*" name="city" class="validate form-control" required>
+                                <span class="input-focus-effect theme-bg"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <select class="form-control sec-subtitle" name="mproduct" id="mproduct" required="">
+                                    <option value="" disabled selected>Pilih Produk Assist.id*</option>
+                                    <option value="Clinica For Starters">Clinica For Starters (Gratis)</option>
+                                    <option value="Clinica">Clinica</option>
+                                    <option value="Clinica Pro">Clinica Pro</option>
+                                    <option value="Belum Saya Memilih">Belum Saya Memilih</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6" >
+                            <div class="form-group">
+                                <input type="text" class="validate form-control" placeholder="Pesan(Optional)" name="message" id="message"></input>
+                                <span class="input-focus-effect theme-bg"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 p-15px-t">
+                        <div class="send">
+                            <button class="btn btn-themewh5 cta-cent" type="submit" name="send"> Daftar Sekarang</button>
+                        </div>
+                        <span class="output_message"></span>
+                    </div>
+                    </div>
+                </form>
+            </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- / -->
+
+    <!--
+    ============================================================
+      Tidak Menemukan Fitur yang Anda cari?
+    ============================================================
+    -->
+
+    <section class="section-covid">
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="" data-src="https://public-medicaboo.s3-ap-southeast-1.amazonaws.com/landing/sistem-klinik-terbaik-custom-fitur-lengkap-assist-id.png"  title="" alt="sistem klinik terbaik custom fitur lengkap assist.id">
+            </div>
+            <div class="col-md-6 content-center">
+                <div class="fitur-cari p-25px-l p-55px-r md-p-0px-lr md-m-40px-t">
+                    <h4 class="dark-color font-alt" style="color: #2b64af;">Tidak Menemukan Fitur yang Anda cari?</h4>
+                    <p class="dark-color1 font-alt large-text">Yuk kita diskusikan seluruh kebutuhan klinik Anda. Hubungi kami untuk informasi lebih lanjut.</p>
+                    <div class="btn-bar">
+                        <a class="btn btn-hubungi1 cta-cent" href="/demo-sistem-klinik-premium-clinica">Hubungi Tim Assist.id</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section> <!-- row -->
+
+    
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#navbar-content").hide();
+            $(function(){
+                var section = document.getElementById("content-section");
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > section.offsetTop){
+                        $('#navbar-content').fadeIn();
+                        $('#navbar-header-blue').fadeOut();
+                        $('#navbar-header-white').fadeOut();
+                    } else {
+                        $('#navbar-content').fadeOut();
+                        $('#navbar-header-blue').fadeIn();
+                        $('#navbar-header-white').fadeIn();
+                    }
+                });
+            });
+
+        });
+
+        $(".list-clinica").click(function(){
+        $(".list-clinica, .list-clinica").css("color", "#a39e9e");
+        $(this).css("color", "#145DFF");
+        });
+    </script>
+    
+    <%- include('bodyscripts'); %>
+
+</main>
+<!-- / -->
+<%- include('footer-v3'); %>

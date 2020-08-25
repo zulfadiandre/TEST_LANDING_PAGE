@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="id">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--start-->
+    <meta name="author" content="Assist.id" />
+    <meta name="google-site-verification" content="xaSOGYCxjaipS36lfuwWGfrYHzGC9D7SKHFztiC7HK0" />
+    <meta name="keyword" content="assist.id, software, klinik rumah sakit, puskesmas, manajemen klinik, demo software, software klinik, sistem informasi klink, aplikasi klinik, trial">
+    <meta name="description" content="Demo software klinik online gratis, dan sesuaikan software dengan kebutuhan klinik, praktek pribadi dan apotek anda sebelum berlangganan.">
+    <meta property="og:site_name" content="Assist.id" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Demo Software - Assist.id" />
+    <meta property="og:url" content="https://www.assist.id" />
+    <meta property="og:description" content="Demo software klinik online gratis, dan sesuaikan software dengan kebutuhan klinik, praktek pribadi dan apotek anda sebelum berlangganan." />
+
+    <!--end-->
+
+    <title>Demo Software - Assist.id</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/apple-icon.png">
+
+    <!-- Plugin CSS -->
+    <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/plugin/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="static/plugin/et-line/style.css" rel="stylesheet">
+    <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+    <!-- End -->
+
+
+    <!-- Theme css -->
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/color/default.css" rel="stylesheet" id="color_theme">
+    <!-- End -->
+    <script>
+        function reloadpage() {
+            setTimeout(location.reload.bind(location), 20000);
+        }
+    </script>
+    <%- include('scripts'); %>
+
+</head>
+
+<!-- ========== Body Starts ========== -->
+<!-- Body Start -->
+<body data-spy="scroll" data-target="#navbar" data-offset="98" onload="getURL()">
+
+<!-- Loading -->
+<div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+</div>
+<!-- / -->
+
+
+<!-- Header -->
+
+<!-- Header End -->
+
+<!-- Main -->
+<main>
+
+
+    <!--
+    =============================
+      Page Title Section
+    =============================
+    -->
+    <!--
+    =============================
+      FAQ's
+    =============================
+    -->
+
+    <section class="section-demo border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 ">
+                    <div class="work-flow p-50px-r md-p-0px-r">
+                        <img src="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/logo.png" alt="logo assist.id software klinik terbaik indonesia" class="logo-demo1">
+                        <h2 class="dark-color font-alt">Kenapa Pilih Pharma?</h2>
+                        <h6 style="margin-bottom: 50px; font-style: italic">Sistem Apotek</h6>
+
+                        <ul>
+                            <li class="" style="margin-bottom: 25px">
+                                <img class="icon" src="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/ico-calculator.png" alt="icon calculator">
+
+                                <p>Semua data dihitung secara otomatis.</p>
+                            </li>
+                            <li class="" style="margin-bottom: 25px">
+                                <img class="icon" src="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/ico-touchscreen.png" alt="icon touchscreen">
+
+                                <p>POS kasir, Data Obat dan laporan dalam satu Aplikasi.</p>
+                            </li>
+                            <li class="" style="margin-bottom: 25px">
+                                <img class="icon" src="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/ico-hand-planting.png" alt="icon hand planting">
+
+                                <p>Jaga loyalitas customer untuk meningkatkan penjualan.</p>
+                            </li>
+                            <li class="" style="margin-bottom: 25px">
+                                <img class="icon" src="https://public-medicaboo.s3.ap-southeast-1.amazonaws.com/ico-clock-checked.png" alt="icon clock checked">
+
+                                <p>Laporan apotek tanpa ribet menghemat waktu anda yang berharga.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h4 class="dark-color font-alt">Coba Gratis Sistem Apotek Assist.id</h4>
+                        <form class="contactform" method="post" action="/reqdemoapotekpremise">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="hidden" id="url" name="url">
+                                        <input id="medname" name="medname" type="text" placeholder="Nama Apotek" class="validate form-control" required>
+                                        <span class="input-focus-effect theme-bg"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="usname" type="text" placeholder="Nama Lengkap" name="usname" class="validate form-control" required>
+                                        <span class="input-focus-effect theme-bg"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="jabatan" type="text" placeholder="Jabatan" name="jabatan" class="validate form-control" required>
+                                        <span class="input-focus-effect theme-bg"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="phonenumber" type="number" placeholder="Nomor WhatsApp Aktif" name="phonenumber" class="validate form-control" required>
+                                        <span class="input-focus-effect theme-bg"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="email" type="email" placeholder="Alamat Email" name="email" class="validate form-control" required>
+                                        <span class="input-focus-effect theme-bg"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="city" type="text" placeholder="Kabupaten/Kota" name="city" class="validate form-control" required>
+                                        <span class="input-focus-effect theme-bg"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="referral" type="text" placeholder="Kode Referral (Opsional)" name="referral" class="validate form-control">
+                                        <span class="input-focus-effect theme-bg"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <select class="form-control sec-subtitle" name="mproduct" id="mproduct" required>
+                                            <option value="Pharma Premise">Pharma Premise</option>
+                                            <option value="Pharma Cloud">Pharma Cloud</option>
+                                            <option value="Bantu Saya Memilih">Bantu Saya Memilih</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="send">
+                                        <button class="btn btn-theme" type="submit" name="send"> Coba Gratis</button>
+                                    </div>
+                                    <span class="output_message"></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+</main>
+<!-- / -->
+
+<!-- Footer -->
+<footer class="footer footer-dark" style="margin-top: -100px;">
+    <section class="footer-section" id="#footer">
+        <div class="container">
+
+            <div class="footer-copy">
+                <div class="row">
+                    <div class="col-12">
+                        <p style="color: gray">2019 © Assist.id . All Rights Reserved.</p>
+                    </div><!-- col -->
+                </div> <!-- row -->
+            </div> <!-- footer-copy -->
+
+        </div> <!-- container -->
+    </section>
+</footer>
+<!-- / -->
+
+
+<!-- Jquery -->
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+<!-- End -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87809650-4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-87809650-4');
+</script>
+<!--end-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Plugin JS -->
+<script src="static/plugin/appear/jquery.appear.js"></script><!--appear-->
+<script src="static/plugin/bootstrap/js/popper.min.js"></script><!--popper-->
+<script src="static/plugin/bootstrap/js/bootstrap.js"></script><!--bootstrap-->
+<!-- End -->
+
+<!-- Custom -->
+
+<script src="static/js/jquery.parallax-scroll.js"></script>
+<script src="static/js/custom.js"></script>
+<!-- End -->
+
+</body>
+<!-- ========== End of Body ========== -->
+
+
+</html>

@@ -1,0 +1,11 @@
+<!-- Img difer -->
+<script>
+  window.onload = function () {
+      var handle = document.getElementsByTagName('img');
+      for (var i = 0; i < handle.length; i++) {
+        if (handle[i].getAttribute('data-src')) {
+          handle[i].setAttribute('src', handle[i].getAttribute('data-src'));
+        }
+      }
+  };
+</script>
